@@ -1,4 +1,4 @@
-# class EmployeeOne : # Parent/Base Class
+# class EmpOne : # Parent/Base Class
 #     def __init__(self, empFName, empLName) :
 #         self.empFName = empFName
 #         self.empLName = empLName
@@ -6,15 +6,15 @@
 #     def empNames(self) :
 #         print(self.empFName, self.empLName);
         
-# class EmployeeTwo (EmployeeOne) : # Child/Derived Class
+# class EmpTwo (EmpOne) : # Child/Derived Class
 #     pass
-# empO = EmployeeOne("Jack", "Lee");
+# empO = EmpOne("Jack", "Lee");
 # empO.empNames();
-# empT = EmployeeTwo("Joe", "Root");
+# empT = EmpTwo("Joe", "Root");
 # empT.empNames();
 
 # Add the __init__() Function ;
-# class EmployeeOne : # Parent/Base Class
+# class EmpOne : # Parent/Base Class
 #     def __init__(self, empFName, empLName) :
 #         self.empFName = empFName
 #         self.empLName = empLName
@@ -22,14 +22,14 @@
 #     def empNames(self) :
 #         print(self.empFName, self.empLName);
         
-# class EmployeeTwo (EmployeeOne) : # Child/Derived Class
+# class EmpTwo (EmpOne) : # Child/Derived Class
 #     def __init__(self, empFName, empLName):
-#        EmployeeOne.__init__(empFName, empLName)
-# empT = EmployeeTwo("Brayn", "Nodwin");
+#        EmpOne.__init__(empFName, empLName)
+# empT = EmpTwo("Brayn", "Nodwin");
 # empT.empNames();
 
 # super() Function :
-# class EmployeeOne : # Parent/Base Class
+# class EmpOne : # Parent/Base Class
 #     def __init__(self, empFName, empLName) :
 #         self.empFName = empFName
 #         self.empLName = empLName
@@ -37,14 +37,14 @@
 #     def empNames(self) :
 #         print(self.empFName, self.empLName);
         
-# class EmployeeTwo (EmployeeOne) : # Child/Derived Class
+# class EmpTwo (EmpOne) : # Child/Derived Class
 #     def __init__(self, empFName, empLName):
 #        super().__init__(empFName, empLName)
-# empT = EmployeeTwo("Mark", "Zukerberg");
+# empT = EmpTwo("Mark", "Zukerberg");
 # empT.empNames();
 
 # Add Properties :
-class EmployeeOne : # Parent/Base Class
+class EmpOne : # Parent/Base Class
     def __init__(self, empFName, empLName) :
         self.empFName = empFName
         self.empLName = empLName
@@ -52,17 +52,17 @@ class EmployeeOne : # Parent/Base Class
     def empNames(self) :
         print(self.empFName, self.empLName);
         
-class EmployeeTwo (EmployeeOne) : # Child/Derived Class
+class EmpTwo (EmpOne) : # Child/Derived Class
     def __init__(self, empFName, empLName, empSalary):
        super().__init__(empFName, empLName)
     #    self.empSalary = 10000
        self.empSalary = empSalary
-empT = EmployeeTwo("Elon", "Musk", 10000); 
+empT = EmpTwo("Elon", "Musk", 10000); 
 empT.empNames();
 # print(empT.empSalary);
 
 # Add Methods :
-class EmployeeOne : # Parent/Base Class
+class EmpOne : # Parent/Base Class
     def __init__(self, empFName, empLName) :
         self.empFName = empFName
         self.empLName = empLName
@@ -70,12 +70,12 @@ class EmployeeOne : # Parent/Base Class
     def empNames(self) :
         print(self.empFName, self.empLName);
         
-class EmployeeTwo (EmployeeOne) : # Child/Derived Class
+class EmpTwo (EmpOne) : # Child/Derived Class
     def __init__(self, empFName, empLName, empSalary):
        super().__init__(empFName, empLName)
        self.empSalary = empSalary
     
     def myFunc(self) :
         print("Hey,", self.empFName, self.empLName, "With Salary", self.empSalary)
-empT = EmployeeTwo("Jack", "Marnus", 100000);
+empT = EmpTwo("Jack", "Marnus", 100000);
 empT.myFunc();
