@@ -25,3 +25,5 @@ favMovie = "Ironman";
 # print(f"New Number : {myFunc(11)}");
 
 
+# format() Method :
+empName = "Henty"
