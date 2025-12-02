@@ -34,4 +34,10 @@ This repository contains simple, structured examples for each topic — focusing
 ```bash
 PythonLab/
 ├── basics/
-├── conditiona
+├── conditional_loops/
+├── functions/
+├── data_structures/
+├── oop/
+├── modules/
+├── file_handling/
+└── README.md
